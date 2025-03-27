@@ -10,72 +10,72 @@ import {
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
+		title: '搜索之道',
 		url: 'google-health-platform',
-		category: 'Web Application',
-		img: '/images/web-project-2.jpg',
+		category: '内置各种搜索引擎和工具，提升搜索体验',
+		img: '/images/search-way.png',
 		ProjectHeader: {
-			title: 'Google Health Platform',
-			publishDate: 'Jul 26, 2021',
+			title: '搜索之道',
+			publishDate: 'baozi 2025',
 			tags: 'UI / Frontend',
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/ui-project-1.jpg',
+				title: '搜索引擎',
+				img: '/images/search-way.png',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/web-project-2.jpg',
+				title: '天气工具',
+				img: '/images/weather-1.png',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/mobile-project-2.jpg',
+				title: '自定义图标组件',
+				img: '/images/custom-icon-1.png',
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: '有关项目',
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: '名称',
+					details: '搜索之道',
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'Web Development',
+					title: '服务',
+					details: '搜索 / 组件 / 工具',
 				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
+				// {
+				// 	id: uuidv4(),
+				// 	title: 'Website',
+				// 	details: 'https://company.com',
+				// },
+				// {
+				// 	id: uuidv4(),
+				// 	title: 'Phone',
+				// 	details: '555 8888 888',
+				// },
 			],
-			ObjectivesHeading: 'Objective',
+			ObjectivesHeading: '功能',
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
+				'内置丰富的搜索引擎，包含网页、地图、技术等，提供极致的搜索服务；包含各种实用工具，如天气，可自定义功能图标。',
+			// Technologies: [
+			// 	{
+			// 		title: 'Tools & Technologies',
+			// 		techs: [
+			// 			'HTML',
+			// 			'CSS',
+			// 			'JavaScript',
+			// 			'Vue.js',
+			// 			'TailwindCSS',
+			// 			'AdobeXD',
+			// 		],
+			// 	},
+			// ],
 			ProjectDetailsHeading: 'Challenge',
 			ProjectDetails: [
 				{
@@ -88,18 +88,9 @@ export const projectsData = [
 					details:
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
 				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
+
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: 'Share This',
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -136,10 +127,10 @@ export const projectsData = [
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
+		title: '命令速查',
 		url: 'phoenix-digital-agency',
-		category: 'Mobile Application',
-		img: '/images/mobile-project-2.jpg',
+		category: '快速定位知识位置，辅助学习更多技术',
+		img: '/images/about-oracle.png',
 		ProjectHeader: {
 			title: 'Phoenix Digital Agency',
 			publishDate: 'Jul 26, 2021',
@@ -262,10 +253,10 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
+		title: '科院导航',
 		url: 'project-management-ui',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-1.jpg',
+		category: '更多快捷工具，方便学习生活',
+		img: '/images/school-navigation.png',
 		ProjectHeader: {
 			title: 'Project Management UI',
 			publishDate: 'Jul 26, 2021',
@@ -388,10 +379,10 @@ export const projectsData = [
 	},
 	{
 		id: 4,
-		title: 'Cloud Storage Platform',
+		title: '分类教程',
 		url: 'cloud-storage-platform',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-2.jpg',
+		category: '丰富的技术教程，提升自己的核心竞争力',
+		img: '/images/classified-course.png',
 		ProjectHeader: {
 			title: 'Cloud Storage Platform',
 			publishDate: 'Jul 26, 2021',
@@ -514,10 +505,10 @@ export const projectsData = [
 	},
 	{
 		id: 5,
-		title: 'WeTalk Social Application',
+		title: '沉浸式页面',
 		url: 'wetalk-social-app',
-		category: 'Mobile Application',
-		img: '/images/mobile-project-1.jpg',
+		category: '实时动态时钟，每秒都在书写当下',
+		img: '/images/immersive-page.png',
 		ProjectHeader: {
 			title: 'WeTalk Social Application',
 			publishDate: 'Jul 26, 2021',
@@ -640,10 +631,10 @@ export const projectsData = [
 	},
 	{
 		id: 6,
-		title: 'Apple New Design System',
+		title: '番茄钟',
 		url: 'apple-new-design-system',
 		category: 'Web Application',
-		img: '/images/web-project-1.jpg',
+		img: '/images/pomodoro.png',
 		ProjectHeader: {
 			title: 'Apple New Design System',
 			publishDate: 'Jul 26, 2021',

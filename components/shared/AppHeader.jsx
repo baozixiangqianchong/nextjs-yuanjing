@@ -144,34 +144,37 @@ function AppHeader() {
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="Projects"
           >
-            <Link href="/projects">Projects</Link>
+            {/* <Link href="/projects">Projects</Link> */}
+            <Link href="/projects">项目</Link>
           </div>
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="About Me"
           >
-            <Link href="/about">About Me</Link>
+            <Link href="/about">关于我</Link>
+            {/* <Link href="/about">About Me</Link> */}
           </div>
 
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="Contact"
           >
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">联系</Link>
+            {/* <Link href="/contact">Contact</Link> */}
           </div>
         </div>
 
         {/* Header right section buttons */}
         <div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-          <div className="hidden md:flex">
+          {/* <div className="hidden md:flex">
             <button
-              onClick={showHireMeModal}
+              //   onClick={showHireMeModal}
               className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
               aria-label="Hire Me Button"
             >
               Hire Me
             </button>
-          </div>
+          </div> */}
 
           {/* Theme switcher large screen */}
           <div
