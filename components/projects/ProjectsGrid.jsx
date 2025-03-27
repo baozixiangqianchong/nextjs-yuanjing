@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { FiSearch } from "react-icons/fi";
+// import { FiSearch } from "react-icons/fi";
 import ProjectSingle from "./ProjectSingle";
 import { projectsData } from "../../data/projectsData";
-import ProjectsFilter from "./ProjectsFilter";
+// import ProjectsFilter from "./ProjectsFilter";
 
 function ProjectsGrid() {
-  const [searchProject, setSearchProject] = useState();
+  // const [searchProject, setSearchProject] = useState();
   const [selectProject, setSelectProject] = useState();
 
   // @todo - To be fixed
@@ -29,73 +29,16 @@ function ProjectsGrid() {
   return (
     <section className="py-5 sm:py-10 mt-5 sm:mt-10">
       <div className="text-center">
-        <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light lg:text-7xl text-blue-600 font-bold">
-          源境Tab
+        <p className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl dark:text-ternary-light">
+          功能展示
         </p>
       </div>
 
       <div className="mt-10 sm:mt-8">
         <h3 className="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl mb-3">
-          源境Tab是一款 Chrome
-          插件，让你在新标签页中通过个性化设置，开启探索之旅，发现新兴趣与灵感！
+          源境Tab
+          极简高效的新标签页，聚合多种搜索、技术文档快速检索和沉浸式番茄钟，让每个标签页都成为你的生产力中心
         </h3>
-        {/* <div
-          className="
-                        flex
-                        justify-between
-                        border-b border-primary-light
-                        dark:border-secondary-dark
-                        pb-3
-                        gap-3
-                        "
-        >
-          <div className="flex justify-between gap-2">
-            <span
-              className="
-                                hidden
-                                sm:block
-                                bg-primary-light
-                                dark:bg-ternary-dark
-                                p-2.5
-                                shadow-sm
-                                rounded-xl
-                                cursor-pointer
-                                "
-            >
-              <FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
-            </span>
-            <input
-              onChange={(e) => {
-                setSearchProject(e.target.value);
-              }}
-              className="
-                                ont-general-medium 
-                                pl-3
-                                pr-1
-                                sm:px-4
-                                py-2
-                                border 
-                            border-gray-200
-                                dark:border-secondary-dark
-                                rounded-lg
-                                text-sm
-                                sm:text-md
-                                bg-secondary-light
-                                dark:bg-ternary-dark
-                                text-primary-dark
-                                dark:text-ternary-light
-                                "
-              id="name"
-              name="name"
-              type="search"
-              required=""
-              placeholder="Search Projects"
-              aria-label="Name"
-            />
-          </div>
-
-          <ProjectsFilter setSelectProject={setSelectProject} />
-        </div> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5">

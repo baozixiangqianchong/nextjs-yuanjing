@@ -31,22 +31,30 @@ function ProjectSingle(props) {
       </div>
 
       {/* Gallery */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-        {props.project.ProjectImages.map((project) => {
-          return (
-            <div className="mb-10 sm:mb-0" key={project.id}>
-              <Image
-                src={project.img}
-                className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                alt={project.title}
-                key={project.id}
-                layout="responsive"
-                width={100}
-                height={90}
-              />
-            </div>
-          );
-        })}
+      <div className={`flex flex-wrap justify-center gap-6 mt-12`}>
+        {props.project.ProjectImages.map((project) => (
+          <div
+            className={`
+              ${
+                props.project.ProjectImages.length === 1
+                  ? "w-full max-w-2xl"
+                  : props.project.ProjectImages.length === 2
+                  ? "w-full sm:w-[45%]"
+                  : "w-full sm:w-[30%]"
+              }
+              transition-all duration-300
+            `}
+            key={project.id}
+          >
+            <Image
+              src={project.img}
+              className="rounded-xl cursor-pointer shadow-lg hover:shadow-xl w-full h-auto"
+              alt={project.title}
+              width={600}
+              height={400}
+            />
+          </div>
+        ))}
       </div>
 
       {/* Info */}

@@ -7,6 +7,19 @@ import HireMeModal from "../HireMeModal";
 import logoLight from "../../public/images/logo-light.svg";
 import logoDark from "../../public/images/logo-dark.svg";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
+import { FiGithub, FiGlobe } from "react-icons/fi";
+const socialLinks = [
+  {
+    id: 1,
+    icon: <FiGlobe />,
+    url: "https://yuanjingteam.cn/",
+  },
+  {
+    id: 2,
+    icon: <FiGithub />,
+    url: "https://github.com/yuanjingteam",
+  },
+];
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,18 +53,18 @@ function AppHeader() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id="nav"
-      className="sm:container sm:mx-auto"
+      className="sm:container sm:mx-auto sticky inset-x-0 top-0 z-30 min-h-14 h-full border-b border-gray-200 bg-white/40 backdrop-blur-lg transition-all dark:border-gray-700 dark:bg-gray-800/40"
     >
       {/* Header */}
-      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center">
         {/* Header menu links and small screen hamburger menu */}
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
-            <Link href="/">
+            <Link href="/" aria-label="首页">
               {activeTheme === "dark" ? (
                 <Image
                   src={logoDark}
-                  className="w-36 cursor-pointer"
+                  className="w-28 cursor-pointer"
                   alt="Dark Logo"
                   width={150}
                   height={120}
@@ -59,7 +72,7 @@ function AppHeader() {
               ) : (
                 <Image
                   src={logoLight}
-                  className="w-36 cursor-pointer"
+                  className="w-28 cursor-pointer"
                   alt="Dark Logo"
                   width={150}
                   height={120}
@@ -113,18 +126,18 @@ function AppHeader() {
           }
         >
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-            <Link href="/projects" aria-label="Projects">
-              Projects
+            <Link href="/projects" aria-label="项目">
+              项目
             </Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-            <Link href="/about" aria-label="About Me">
-              About Me
+            <Link href="/about" aria-label="介绍">
+              介绍
             </Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-            <Link href="/contact" aria-label="Contact">
-              Contact
+            <Link href="/contact" aria-label="联系">
+              联系
             </Link>
           </div>
           <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
@@ -142,45 +155,51 @@ function AppHeader() {
         <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-            aria-label="Projects"
+            aria-label="首页"
           >
-            {/* <Link href="/projects">Projects</Link> */}
+            <Link href="/">首页</Link>
+          </div>
+          <div
+            className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+            aria-label="项目"
+          >
             <Link href="/projects">项目</Link>
           </div>
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-            aria-label="About Me"
+            aria-label="介绍"
           >
-            <Link href="/about">关于我</Link>
+            <Link href="/about">介绍</Link>
             {/* <Link href="/about">About Me</Link> */}
           </div>
 
-          <div
+          {/* <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-            aria-label="Contact"
+            aria-label="联系"
           >
             <Link href="/contact">联系</Link>
-            {/* <Link href="/contact">Contact</Link> */}
-          </div>
+          </div> */}
         </div>
 
         {/* Header right section buttons */}
         <div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-          {/* <div className="hidden md:flex">
-            <button
-              //   onClick={showHireMeModal}
-              className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-              aria-label="Hire Me Button"
-            >
-              Hire Me
-            </button>
-          </div> */}
-
+          <ul className="flex">
+            {socialLinks.map((link) => (
+              <a
+                href={link.url}
+                target="__blank"
+                key={link.id}
+                className="ml-2 text-ternary-dark dark:text-ternary-light  p-3 shadow-sm rounded-xl"
+              >
+                <i className="text-xl sm:text-2xl md:text-2xl">{link.icon}</i>
+              </a>
+            ))}
+          </ul>
           {/* Theme switcher large screen */}
           <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"
-            className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+            className="ml-2 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
           >
             {activeTheme === "dark" ? (
               <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
