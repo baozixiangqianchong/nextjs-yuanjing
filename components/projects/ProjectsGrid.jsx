@@ -36,8 +36,8 @@ function ProjectsGrid() {
 
       <div className="mt-10 sm:mt-8">
         <h3 className="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl mb-3">
-          源境Tab
-          极简高效的新标签页，聚合多种搜索、技术文档快速检索和沉浸式番茄钟，让每个标签页都成为你的生产力中心
+          <span className="text-blue-700">源境Tab</span> ——
+          极简高效的新标签页，聚合智能搜索、技术文档速查与沉浸式番茄钟，让每个标签页化身你的生产力引擎。
         </h3>
       </div>
 

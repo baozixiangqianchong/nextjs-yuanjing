@@ -12,7 +12,7 @@ export const projectsData = [
 		id: 1,
 		title: '搜索之道',
 		url: 'google-health-platform',
-		category: '内置各种搜索引擎和工具，提升搜索体验',
+		category: '聚合多引擎搜索与实时天气，支持自定义导航，打造高效搜索体验',
 		img: '/images/search-way.png',
 		ProjectHeader: {
 			title: '搜索之道',
@@ -49,20 +49,10 @@ export const projectsData = [
 					title: '服务',
 					details: '搜索 / 组件 / 工具',
 				},
-				// {
-				// 	id: uuidv4(),
-				// 	title: 'Website',
-				// 	details: 'https://company.com',
-				// },
-				// {
-				// 	id: uuidv4(),
-				// 	title: 'Phone',
-				// 	details: '555 8888 888',
-				// },
 			],
 			ObjectivesHeading: '功能',
 			ObjectivesDetails:
-				'内置丰富的搜索引擎，包含网页、地图、技术等，提供极致的搜索服务；包含各种实用工具，如天气，可自定义功能图标。',
+				'内置丰富的搜索引擎，包含网页、地图、技术等，提供极致的搜索服务；包含各种实用工具，如天气，可自定义图标导航。',
 			// Technologies: [
 			// 	{
 			// 		title: 'Tools & Technologies',
@@ -134,7 +124,7 @@ export const projectsData = [
 		id: 2,
 		title: '命令速查',
 		url: 'phoenix-digital-agency',
-		category: '快速定位知识位置，辅助学习更多技术',
+		category: '聚合主流开发技术栈的完整命令集，支持精准检索与高亮定位',
 		img: '/images/about-oracle.png',
 		ProjectHeader: {
 			title: '命令速查',
@@ -235,7 +225,7 @@ export const projectsData = [
 		id: 3,
 		title: '科院导航',
 		url: 'project-management-ui',
-		category: '更多快捷工具，方便学习生活',
+		category: '提供精选AI资源、学习平台及在线工具等一站式快捷导航，优化学习与工作效率',
 		img: '/images/school-navigation.png',
 		ProjectHeader: {
 			title: '科院导航',
@@ -284,7 +274,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'更清晰地呈现学校集中常用的网页及功能，以便科院学生或教师能够方便快捷地使用，同时整合一系列AI工具便于提问回答。'
+						'更清晰地呈现学校集中常用的网页及功能，以便学校学生或教师能够方便快捷地使用，同时整合一系列AI工具便于提问回答。'
 				},
 
 			],
@@ -327,7 +317,7 @@ export const projectsData = [
 		id: 4,
 		title: '分类教程',
 		url: 'cloud-storage-platform',
-		category: '丰富的技术教程，提升自己的核心竞争力',
+		category: '汇聚全栈技术知识库，支持个性化收藏与智能检索，赋能开发者技术成长与职业进阶',
 		img: '/images/classified-course.png',
 		ProjectHeader: {
 			title: '分类教程',
@@ -428,7 +418,7 @@ export const projectsData = [
 		id: 5,
 		title: '沉浸式页面',
 		url: 'wetalk-social-app',
-		category: '实时动态时钟，每秒都在书写当下',
+		category: '沉浸式动态时钟界面，描绘多彩励志诗篇，每秒都在书写当下',
 		img: '/images/immersive-page.png',
 		ProjectHeader: {
 			title: '沉浸式页面',
@@ -524,7 +514,7 @@ export const projectsData = [
 		id: 6,
 		title: '番茄钟',
 		url: 'apple-new-design-system',
-		category: '开启番茄钟，让每一秒都为高效时光添彩',
+		category: '开启番茄钟，聆听沉浸式背景音乐，定时学习，让每一秒都为高效时光添彩',
 		img: '/images/pomodoro.png',
 		ProjectHeader: {
 			title: '番茄钟',
@@ -536,6 +526,11 @@ export const projectsData = [
 				id: uuidv4(),
 				title: '番茄钟',
 				img: '/images/pomodoro.png',
+			},
+			{
+				id: uuidv4(),
+				title: '番茄钟',
+				img: '/images/pomodoro-2.png',
 			},
 		],
 		ProjectInfo: {
@@ -578,7 +573,7 @@ export const projectsData = [
 				{
 					id: uuidv4(),
 					details:
-						'倒计时动画：采用动态视觉设计，随着时间流逝，动画同步推进，让时间流动可感可知，增强时间管理意识。',
+						'专注式白噪音：用户可自行调节音量、切换不同音效，实现真正意义上的个性化沉浸体验，提升专注度或放松效果。',
 				},
 			],
 			// SocialSharingHeading: 'Share This',
