@@ -4,7 +4,7 @@ import ProjectsGrid from "../../components/projects/ProjectsGrid";
 function index() {
   return (
     <div className="container mx-auto">
-      <PagesMetaHead title="项目" />
+      <PagesMetaHead title="功能" />
 
       <ProjectsGrid />
     </div>

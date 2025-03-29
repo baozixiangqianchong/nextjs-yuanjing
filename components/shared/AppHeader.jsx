@@ -9,11 +9,11 @@ import logoDark from "../../public/images/logo-dark.svg";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import { FiGithub, FiGlobe } from "react-icons/fi";
 const socialLinks = [
-  {
-    id: 1,
-    icon: <FiGlobe />,
-    url: "https://yuanjingteam.cn/",
-  },
+  // {
+  //   id: 1,
+  //   icon: <FiGlobe />,
+  //   url: "https://yuanjingteam.cn/",
+  // },
   {
     id: 2,
     icon: <FiGithub />,
@@ -126,13 +126,13 @@ function AppHeader() {
           }
         >
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-            <Link href="/projects" aria-label="项目">
-              项目
+            <Link href="/projects" aria-label="功能">
+              功能
             </Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-            <Link href="/about" aria-label="介绍">
-              介绍
+            <Link href="/about" aria-label="关于我们">
+              关于我们
             </Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
@@ -161,16 +161,15 @@ function AppHeader() {
           </div>
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-            aria-label="项目"
+            aria-label="功能"
           >
-            <Link href="/projects">项目</Link>
+            <Link href="/projects">功能</Link>
           </div>
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-            aria-label="介绍"
+            aria-label="关于我们"
           >
-            <Link href="/about">介绍</Link>
-            {/* <Link href="/about">About Me</Link> */}
+            <Link href="/about">关于我们</Link>
           </div>
 
           {/* <div

@@ -7,7 +7,7 @@ import PagesMetaHead from "../components/PagesMetaHead";
 function about() {
   return (
     <div>
-      <PagesMetaHead title="介绍" />
+      <PagesMetaHead title="关于我们" />
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -17,24 +17,23 @@ function about() {
       >
         <AboutMeBio />
       </motion.div>
-
       {/** Counter without paddings */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, delay: 1 }}
         exit={{ opacity: 0 }}
       >
         <AboutCounter />
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, delay: 1 }}
         exit={{ opacity: 0 }}
         className="container mx-auto"
       >
         <AboutClients />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
